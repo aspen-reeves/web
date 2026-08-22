@@ -41,6 +41,52 @@
             height: auto;
         }
 
+        .intro {
+            font-size: 0;
+        }
+
+        .intro > * {
+            display: inline-block;
+            box-sizing: border-box;
+            width: 50%;
+            vertical-align: top;
+            font-size: 1rem;
+        }
+
+        .intro img {
+            padding-left: 0.75rem;
+            height: auto;
+        }
+
+        .intro div {
+            padding-right: 0.75rem;
+        }
+
+        .intro h3 {
+            margin-top: 0;
+        }
+
+        .album-marquee {
+            display: block;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .album-marquee img {
+            display: block;
+            max-width: none;
+            height: auto;
+        }
+
+        @media (max-width: 600px) {
+            .intro > * {
+                display: block;
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
     </style>
 
 </head>
@@ -51,21 +97,19 @@
         <h2>welcome to puppydyke.com</h2>
         <i>she/her. you can call me dyke, faggot, pup, or just: aspen</i>
         <br><br>
-        <img src="images/DSC00380.JPG" />
-
-        <h3>About Me</h3>
-        <ul>
-            <li>embedded electronics tinkererer <a href="#1">--></a></li>
-            <li>just a dog on the internet</li>
-            <li>amateur ism band enthusiast(hmu on meshtastic)</li>
-            <li>open source user</li>
-            <li>goth and new wave music fan<a href="#2">--></a></li>
-            <li>i dabble in photography <a href="#3">--></a></li>
-            <li>anarchist communist <a href="#4">--></a> </li>
-
-        </ul>
-
-        <h4>Contact</h4>
+        <div class="intro">
+            <div>
+                <h3>about me</h3>
+                <ul>
+                    <li>embedded electronics tinkererer <a href="#1">--></a></li>
+                    <li>just a dog on the internet</li>
+                    <li>amateur ism band enthusiast(hmu on meshtastic)</li>
+                    <li>open source user</li>
+                    <li>goth and new wave music fan<a href="#2">--></a></li>
+                    <li>i dabble in photography <a href="#3">--></a></li>
+                    <li>anarchist communist <a href="#4">--></a> </li>
+                </ul>
+            <h4>contact</h4>
         <ul>
             <li>signal: blahaj.01</li>
             <li>email: contact[at]aspenr[dot]dev
@@ -75,7 +119,11 @@
                 </ul>
             </li>
 
-        </ul>
+        </ul>    
+            </div><img src="images/DSC00380.JPG" alt="Aspen" />
+        </div>
+
+        
 
 
         <h3>Visitors</h3>
@@ -110,13 +158,65 @@
             <img src="legacy/images/acab.gif" alt="acab" title="acab" />
             <a href="https://archlinux.org/"><img src="legacy/images/archlinux.gif" alt="archlinux.org" title="archlinux.org" /></a>
             <a href="https://www.slsknet.org/news/"><img src="legacy/images/soulseek.gif" alt="slsknet.org" title="slsknet.org" /></a>
+            <a href="https://libresprite.github.io"><img src="images/libresprite.gif" alt="libresprite.github.io" title="libresprite.github.io"  </a>
         </div>
         <h3>feel free to add mine :3</h3>
         <a href="https://puppydyke.com"><img src="images/puppydyke.gif" alt="puppydyke.com" title="puppydyke.com" /></a>
 
+        <h3>my favorite music !</h3>
+        <marquee class="album-marquee" behavior="scroll" direction="left" loop="-1">
+            <img src="images/album.png" alt="Some of my favorite albums" />
+        </marquee>
+
+
         <h2>yap</h2>
-        <h4>(01/2026)</h4>
+        
+        
         <p>im not making seperate pages for everything</p>
+        <div id="5">
+            <h4>(08/2026)</h4>
+            <h2>photography pt2</h2>
+            <p>
+                its been a bit since ive written on here , and in the mean time alot of life happened
+                <br><br>
+                i met some new friends
+            </p>
+            <img src="images/DSC00364.JPG" />
+            <br>
+            <img src="images/DSC00389.JPG" />
+            <p>got stuck in the backrooms...</p>
+            <img src="images/DSC00394.JPG" />
+            <br>
+            <img src="images/DSC00395.JPG" />
+            <br>
+            <p>visited the sixth floor museum in dallas and took some pictures around there!</p>
+            <img src="images/DSC00404.JPG" />
+            <br>
+            <p>even cooler yet i got some new cameras !!!</p>
+            <p>from left to right: Nikon FE, Fujifilm X-H1, and Canon EOS 630</p>
+            <img src="images/DSC00420.JPG" />
+            <br>
+            <p>
+                having 3 different lens mounts is sure a(n expensive) hassle, but i now have the 3 types of camera i want
+                that being, manual focus film, autofocus film, and mirrorless digital
+
+            </p>
+            <p>the fujifilm takes just crazy good photos</p>
+            <img src="images/DSCF0532-web.JPG" />
+            <img src="images/DSCF0837-web.JPG" />
+            <img src="images/DSCF8859-web.JPG" />
+            <p>you can find some more samples, uncompressed, <a href="photos.html">here</a>  </p>
+            <p>the canon also can take some pretty good shots:</p>
+            <img src="images/000027720028-web.jpg" />
+            <br>
+            <img src="images/000027720019-web.jpg" />
+            <br>
+            <img src="images/000027720004-web.jpg" />
+            <br>
+            <img src="images/000027710009-web.jpg" />
+            <p>you can find more uncompressed film scans <a href="film.html">here</a></p>
+        </div>
+        <h4>(01/2026)</h4>
         <div id="1">
             <h2>my shitty electronics projects</h2>
             <h3>im making a phone i guess</h3>
@@ -269,7 +369,7 @@
         </div>
         <div id="2">
             <h2>music</h2>
-            <p>i do condone music piracy and <a href="https://www.slsknet.org/news/"><img
+            <p>i do condone music sharing and <a href="https://www.slsknet.org/news/"><img
                         src="legacy/images/soulseek.gif" alt="slsknet.org" /></a> is my favorite way to do it</p>
             <p>i like the diy nature of punk and battle jackets of metal but mostly listen to post-punk at the moment.
                 so heres my jacket/vest</p>
@@ -313,49 +413,7 @@
             </p>
 
         </div>
-        <div id="5">
-            <h4>(08/2026)</h4>
-            <h2>phtotgraphy pt2</h2>
-            <p>
-                its been a bit since ive written on here , and in the mean time alot of life happened
-                <br><br>
-                i met some new friends
-            </p>
-            <img src="images/DSC00364.JPG" />
-            <br>
-            <img src="images/DSC00389.JPG" />
-            <p>got stuck in the backrooms...</p>
-            <img src="images/DSC00394.JPG" />
-            <br>
-            <img src="images/DSC00395.JPG" />
-            <br>
-            <p>visited the sixth floor museum in dallas and took some pictures around there!</p>
-            <img src="images/DSC00404.JPG" />
-            <br>
-            <p>even cooler yet i got some new cameras !!!</p>
-            <p>from left to right: Nikon FE, Fujifilm X-H1, and Canon EOS 630</p>
-            <img src="images/DSC00420.JPG" />
-            <br>
-            <p>
-                having 3 different lens mounts is sure a(n expensive) hassle, but i now have the 3 types of camera i want
-                that being, manual focus film, autofocus film, and mirrorless digital
 
-            </p>
-            <p>the fujifilm takes just crazy good photos</p>
-            <img src="images/DSCF0532-web.JPG" />
-            <img src="images/DSCF0837-web.JPG" />
-            <img src="images/DSCF8859-web.JPG" />
-            <p>you can find some more samples, uncompressed, <a href="photos.html">here</a>  </p>
-            <p>the canon also can take some pretty good shots:</p>
-            <img src="images/000027720028-web.jpg" />
-            <br>
-            <img src="images/000027720019-web.jpg" />
-            <br>
-            <img src="images/000027720004-web.jpg" />
-            <br>
-            <img src="images/000027710009-web.jpg" />
-            <p>you can find more uncompressed film scans <a href="film.html">here</a></p>
-        </div>
         <h2>thank you for visiting my site</h2>
 
         <h4>post script</h4>
